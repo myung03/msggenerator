@@ -1,5 +1,5 @@
 console.log('Hello World')
 
-const firstItem = ['first', 'second', 'third']
-const secondItem = ['one', 'two', 'three']
-const thirdItem = ['a', 'b', 'c']
+let firstItem = ['first', 'second', 'third']
+let secondItem = ['one', 'two', 'three']
+let thirdItem = ['a', 'b', 'c']
