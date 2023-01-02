@@ -1,12 +1,14 @@
+////generates a random number
 const randomNum = num => {return Math.floor(Math.random() * num)};
-//console.log(randomWord(5))
+//testing -> console.log(randomWord(5))
 
+//bank of random word options 
 const randomOptions = [['bed','pocket','hand', 'house', 'cat', 'dog', 'toes', 'cactus', 'suitcase', 'shoes', 'office', 'car', 'bellybutton'],
                      ['button', 'toe', 'eyes', 'nose', 'toes', 'knob', 'switches','hands', 'legs', 'feet', 'potatoes', 'teeth', 'volcanoes', 'tomatoes'],
                      ['eliminate','sit', 'kill', 'laugh', 'eat', 'yawn', 'grab','jump', 'escape', 'kiss','cry','kick','drink', 'run', 'sleep', 'boogie', 'flap'],
                     ['scary', 'amazing', 'cool', 'stinky', 'gross', 'funny', 'silly', 'powerful', 'weak', 'goofy', 'interesting', 'weird', 'odd', 'strange']]
 
-
+//function that pushes each random word option and joins them together into a single sentence 
 const madLib = randomArray => {
     completedLib = ['Random words are surrounded by asterisks:']
     for (let i = 0; i < 4; i++)
@@ -22,5 +24,5 @@ const madLib = randomArray => {
     console.log(completedLib.join(' '));
 }
 
-
+//runs function
 madLib(randomOptions);
